@@ -24,25 +24,24 @@ button {
 </style>
 
 <script>
-body{
-    background-color:black ;
-    color: gray;
-    font-family: papyrus;
+
+function Home(){
+    document.getElementById("home").style.display= "block";
+    document.getElementById("games").style.display= "none";
+    document.getElementById("videos").style.display= "none";
 }
 
-button {
-  background-color:gray; 
-  border: none;
-  font-size: 16px;
-  width:100px;
-  margin: 29px;
-  display: inline-block;
- height: 50px;
- font-family: papyrus;
+function Games(){
+    document.getElementById("home").style.display= "none";
+    document.getElementById("games").style.display= "block";
+    document.getElementById("videos").style.display= "none";
 }
 
-#games,#videos{
-    display: none;
+
+function Videos(){
+    document.getElementById("home").style.display= "none";
+    document.getElementById("games").style.display= "none";
+    document.getElementById("videos").style.display= "block";
 }
 </script
       </head>
